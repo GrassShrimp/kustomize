@@ -9,4 +9,4 @@ RUN apk update && \
 FROM alpine
 COPY --from=base /usr/local/bin/kustomize /usr/local/bin/kustomize
 
-ENTRYPOINT [ "kustomize" ]
+CMD [ "kustomize", "--help" ]
